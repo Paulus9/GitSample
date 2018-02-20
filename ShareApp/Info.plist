@@ -41,5 +41,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Please allow camera permission for sharing image</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Please allow library for sharing image</string>
 </dict>
 </plist>

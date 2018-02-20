@@ -12,7 +12,21 @@
 		554F4CBC20109CAF00DAC4EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554F4CBA20109CAF00DAC4EB /* Main.storyboard */; };
 		554F4CBE20109CAF00DAC4EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 554F4CBD20109CAF00DAC4EB /* Assets.xcassets */; };
 		554F4CC120109CAF00DAC4EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554F4CBF20109CAF00DAC4EB /* LaunchScreen.storyboard */; };
+		554F4CF52011B1FE00DAC4EB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554F4CF42011B1FE00DAC4EB /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		554F4CDD2010B42500DAC4EB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		554F4CB320109CAE00DAC4EB /* ShareApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +36,8 @@
 		554F4CBD20109CAF00DAC4EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		554F4CC020109CAF00DAC4EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		554F4CC220109CAF00DAC4EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		554F4CCE2010B42500DAC4EB /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		554F4CF42011B1FE00DAC4EB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				554F4CB520109CAE00DAC4EB /* ShareApp */,
+				554F4CCD2010B42500DAC4EB /* Frameworks */,
 				554F4CB420109CAE00DAC4EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,8 +77,17 @@
 				554F4CBD20109CAF00DAC4EB /* Assets.xcassets */,
 				554F4CBF20109CAF00DAC4EB /* LaunchScreen.storyboard */,
 				554F4CC220109CAF00DAC4EB /* Info.plist */,
+				554F4CF42011B1FE00DAC4EB /* SearchViewController.swift */,
 			);
 			path = ShareApp;
+			sourceTree = "<group>";
+		};
+		554F4CCD2010B42500DAC4EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				554F4CCE2010B42500DAC4EB /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +100,7 @@
 				554F4CAF20109CAE00DAC4EB /* Sources */,
 				554F4CB020109CAE00DAC4EB /* Frameworks */,
 				554F4CB120109CAE00DAC4EB /* Resources */,
+				554F4CDD2010B42500DAC4EB /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				554F4CF52011B1FE00DAC4EB /* SearchViewController.swift in Sources */,
 				554F4CB920109CAE00DAC4EB /* ViewController.swift in Sources */,
 				554F4CB720109CAE00DAC4EB /* AppDelegate.swift in Sources */,
 			);
@@ -274,11 +302,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: gowdhaman kandasaamy (Z2ZP5DE263)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DB3QW6C5K5;
 				INFOPLIST_FILE = ShareApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sysbig.ShareApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,11 +321,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: gowdhaman kandasaamy (Z2ZP5DE263)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DB3QW6C5K5;
 				INFOPLIST_FILE = ShareApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sysbig.ShareApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
